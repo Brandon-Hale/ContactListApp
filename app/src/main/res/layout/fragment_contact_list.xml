@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContactListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactlistRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/AddContact"/>
+
+    <Button
+        android:id="@+id/AddContact"
+        android:layout_margin="10dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="+"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactlistRecyclerView"
+        android:background="@drawable/roundbutton"/>
+
+    <Button
+        android:id="@+id/PickContact"
+        android:layout_margin="10dp"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:text="Pick Contacts"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactlistRecyclerView"
+        android:background="@drawable/roundbutton"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
